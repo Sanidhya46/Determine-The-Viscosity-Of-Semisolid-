@@ -5,7 +5,7 @@
 
 
 
-// const centrifugeUpperLidOpen = document.getElementById("centrifuge_upper_open_lid");
+// const centrifugeUpperLidOpen = document.getElementById("centrifuge_upper_open_lid");    
 // const centrifugeDownWardLidOpen = document.getElementById("centrifuge_down_ward");
 // const centrifugeCloseLid = document.getElementById("centrifuge_close_lid");
 // const centrifugeTopFilling = document.getElementById("centrifuge_top_filling");
