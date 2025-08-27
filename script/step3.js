@@ -1,35 +1,5 @@
 
-// const butyrometer4 = document.getElementById("butyrometer_centrifuge");
-// const tilted_butyrometer1 = document.getElementById("tilted_butyrometer1");
-// const water_butyrometer = document.getElementById("water_butyrometer_centrifuge");
 
-
-
-// const centrifugeUpperLidOpen = document.getElementById("centrifuge_upper_open_lid");    
-// const centrifugeDownWardLidOpen = document.getElementById("centrifuge_down_ward");
-// const centrifugeCloseLid = document.getElementById("centrifuge_close_lid");
-// const centrifugeTopFilling = document.getElementById("centrifuge_top_filling");
-// const centrifugeDownFilling = document.getElementById("centrifuge_down_filling");
-
-
-// const offOnButton = document.getElementById("Off_On_button");
-// const onButton = document.getElementById("On_Button");
-// const tempIncreaseSwitch = document.getElementById("Temp_increase_switch");
-// const tempDecreaseSwitch = document.getElementById("Temp_decrease_switch");
-
-// const startStop = document.getElementById("Start_Stop");
-// const offstartStop = document.getElementById("Off_Start_Stop");
-// // const upOffSwitch = document.getElementById("upOffSwitch");
-// // const upOnSwitch = document.getElementById("Up_on_switch");
-
-// const rpmDecreaseButton = document.getElementById("rpm_decrease_button");
-// const rpmIncreaseButton = document.getElementById("rpm_increase_button");
-
-// const timeDecreaseButton = document.getElementById("time_decrease_switch");
-// const timeIncreaseButton = document.getElementById("Time_increase_switch");
-
-
-// const finalfatsolution = document.getElementById("finalfatsolution");
 
 
 // // const onSwitchHolder = document.getElementById("onSwitchHolder");
