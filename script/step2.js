@@ -8,7 +8,7 @@
 // const downSwitch3 = document.getElementById("downSwitch3");
 // const offSwitch3 = document.getElementById("offSwitch3");
 // const onSwitch3 = document.getElementById("onSwitch3");       
-// const waterbath3 = document.getElementById("waterbath3");
+// const waterbath3 = document.getElementById("waterbath3");    
 
 // const butyrometer3 = document.querySelector('#butyrometer3');
 // const tilted_butyrometer3 = document.querySelector('#tilted_butyrometer3');
