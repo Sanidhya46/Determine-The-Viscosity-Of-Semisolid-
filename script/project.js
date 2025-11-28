@@ -72,7 +72,7 @@ function start(){
     //     stp33.style.visibility = "hidden";
     //     stp32.style.visibility = "hidden";
     //      stp63.style.visibility = "hidden";
-    //       stp70.style.visibility = "visible"; 
+    //       stp70.style.visibility = "visible";     
     //     startbutton.style.visibility="hidden"
     //     f=1
     //     ins.innerText="Click the pipette to draw 10ml h2so4."
