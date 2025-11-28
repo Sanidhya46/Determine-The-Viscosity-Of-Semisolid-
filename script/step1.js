@@ -126,7 +126,7 @@ function wheighing() {
                           weightDisplay.innerText = "00.00"
 
                           pulse(weightDisplay)
-                          ins.innerText = "Click on the latex beaker to measure 120ml latex"
+                          ins.innerText = "Click on the beaker to measure 120ml latex"
                      latexBeakerfull.addEventListener('click', () => {
            setTimeout(() => {
                   latexBeakerfull.style.top = "28%"
@@ -244,6 +244,8 @@ function wheighing() {
                                                                                                                       ins.innerText = "Click on the latex beaker to reposition to its previous position for next procedure"
                                                                                                                   if(f === 2){
                                                                                                                     f =312
+
+                                                                                                                    console.log("f value is", f)
                                                                                                                    latex_beaker_200.addEventListener('click', () => {
                                                                                                                       latex_beaker_200.style.top = "30%"
                                                                                                                            setTimeout(() => {
@@ -443,7 +445,7 @@ function startHoldingTimer(minutes) {
 
 function latex_beaker () {
 if (f === 201) {
-    f =202;
+    f =201.5;
      latex_beaker_200.addEventListener("click", () => {
         latex_beaker_200.style.top = "30%"
 
@@ -476,12 +478,13 @@ if (f === 201) {
                                     startbutton.style.visibility="visible"
                                     startbutton.style.opacity = "100%"
                                     startbutton.innerText="Next"
+                                    f = 202;
                                     f = 600;
                                                          }, 1000); 
                                                          }, 1000); 
                                                          }, 1000); 
                                                          }, 1000);  
-                                                 }, 1000);  
+                                                 },  { once: true })
                                    }, 1000);  
                       }, 1000);
                  }, 1000);
@@ -489,7 +492,7 @@ if (f === 201) {
               }, 1000);
     
 }, { once: true });
-}
+}else{console.log("error occured not updated .... ")}
 }
 
 
@@ -528,6 +531,7 @@ function startHoldingTimer1(minutes) {
 function viscometer() {
   if(f === 601){
    f=602;
+    latex_beaker_200.addEventListener("click", () => {
      console.log(f);
      latex_beaker_200.style.top = "30%"
       setTimeout(() => {
@@ -571,7 +575,7 @@ function viscometer() {
                                   ins.innerText = "Click on the motor on off button to start the rotation"
                                  motorOnOff.addEventListener("click", () => {
   if (f === 997 && !isMotorRunning) {
-    isMotorRunning = true; // Prevent further clicks
+    isMotorRunning = true;  // Prevent further clicks
     pulse(motorOnOff);
     motorSound.volume = 1;
     motorSound.play();
@@ -812,13 +816,13 @@ selectSpindle.addEventListener("click", () => {
 
                                          }, 1000)
                                         }else{"error happening"}
-                                         }, 1000)
+                                          },  { once: true })
                                    })
 })
                                   
 
        }else{"nhi chalunga"}
-     }, 1000)
+    },  { once: true })
     
     
 
@@ -842,6 +846,7 @@ selectSpindle.addEventListener("click", () => {
                 })
              }, 1000)
       }, 1000)
+    },  { once: true })
   }
 }
 
