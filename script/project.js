@@ -58,7 +58,7 @@ function start(){
     //    statuses = 1;
         startbutton.style.visibility="hidden"
        f=1;
-        ins.innerText="Click on the turn off button of the Weighing Machine To ON it "
+        ins.innerText="Click on the off button of the Weighing Machine To ON it "
         wheighing();
   
     }

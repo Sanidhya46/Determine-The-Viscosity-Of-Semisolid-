@@ -70,7 +70,7 @@ const showResultBtn = document.getElementById("showResultBtn");
 const viscosityResult = document.getElementById("viscosityResult");
 
 
-let changeins12 = "Click on the ON button to start the water bath.";
+let changeins12 = "Click on the On button to start the water bath.";
 let changeins13 = "Click on the Temp increase button to increase temperature of water bath to 65°C.";
 
 
