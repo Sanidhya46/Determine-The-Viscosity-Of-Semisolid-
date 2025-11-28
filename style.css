@@ -43,7 +43,7 @@ body{
 
 .header{
     border: 1px solid black;
-    background-color: rgb(168, 15, 182);
+    background-color: rgb(70, 70, 70);
     height: 3vmax;
     width: 100vmax; 
     position: absolute;
@@ -1403,8 +1403,6 @@ bottom: 5%; */
   left: 11.6%;
   overflow: hidden;
   z-index: 30;
-
-
 }
 
 /* #centrifuge_top_filling {

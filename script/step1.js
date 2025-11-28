@@ -107,7 +107,7 @@ function wheighing() {
     offButtonWeighing.style.transform = 'scale(0.9)';
     offButtonWeighing.style.transition = 'transform 0.1s';
      pulse(weightDisplay);
-     ins.innerText = "Click on the beaker to place on weighing scale to take 60% latex"
+     ins.innerText = "Click on the Empty beaker to place on weighing scale to take 60% latex"
     setTimeout(() => {
         offButtonWeighing.style.transform = 'scale(1)';
             setTimeout(() => {
