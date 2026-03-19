@@ -106,7 +106,7 @@ function start(){
        motorOnOff.style.visibility = "visible"
         stp63.style.visibility="hidden";
         stp33.style.visibility = "visible";
-        ins.innerText = "Click on the beaker to place it on the stand for the rotation"
+        ins.innerText = "Click on the Spindle S2 to put in into viscometer for rotation"
          startbutton.style.visibility="hidden"
         startbutton.style.opacity = "0%"
      

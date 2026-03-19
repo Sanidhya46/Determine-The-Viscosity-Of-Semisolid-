@@ -44,6 +44,105 @@
 
 
               <!-- ---------------------------------------  MEASURING CYYLINDER AND SOLUTION  ------------------ -->
+
+              <div class="table-container_mbrt" id="spindle_table">
+<h2>Spindle Observation Table</h2>
+
+<table>
+  <tr>
+    <th>Spindle</th>
+    <th>Viscosity(cp)</th>
+    <th>Speed (RPM)</th>
+    <th>Torque</th>
+    <th>Time (sec)</th>
+  </tr>
+
+  <tr>
+    <td>S2</td>
+    <td id="vis-S2"></td>
+    <td id="speed-S2" style="color: rgb(245, 43, 43);"></td>
+    <td id="torque-S2"></td>
+    <td id="time-S2"></td>
+  </tr>
+
+  <tr>
+    <td>S3</td>
+    <td id="vis-S3"></td>
+    <td id="speed-S3" style="color: rgb(245, 43, 43);"></td>
+    <td id="torque-S3"></td>
+    <td id="time-S3"></td>
+  </tr>
+
+  <tr>
+    <td>S1</td>
+    <td id="vis-S1"></td>
+    <td id="speed-S1" style="color: rgb(245, 43, 43);"></td>
+    <td id="torque-S1"></td>
+    <td id="time-S1"></td>
+  </tr>
+
+</table>
+</div>
+<div id = rpm_container class="rpm-container">
+  <h3>Choose RPM to Run Spindle</h3>
+
+  <div class="rpm-buttons">
+    <button onclick="selectRPM(8)">8 RPM</button>
+    <button onclick="selectRPM(10)">10 RPM</button>
+    <button onclick="selectRPM(15)">15 RPM</button>
+  </div>
+</div> 
+
+<div id = inference_container class="inference-container">
+
+  <h2 class="inference-title">
+     Experiment Inference
+  </h2>
+
+  <ul class="inference-list">
+    
+    <li>
+      <b>Spindle Effect:</b> Viscosity readings vary with spindle size. 
+      Larger spindles generate higher resistance, resulting in higher 
+      viscosity values compared to smaller spindles.
+    </li>
+
+    <li>
+      <b>RPM Influence:</b> Change in RPM affects shear rate of the fluid. 
+      If viscosity remains nearly constant across different RPMs, the fluid 
+      behaves like a Newtonian fluid; otherwise, it shows non-Newtonian behavior.
+    </li>
+
+    <li>
+      <b>Torque & Accuracy:</b> Reliable measurements are obtained when torque 
+      values fall within an optimal range (generally 10%–50%). Very low or very 
+      high torque may reduce accuracy of the results.
+    </li>
+
+  </ul>
+
+</div>
+
+<div id = rpm_container_1 class="rpm-container">
+  <h3>Choose RPM to Run Spindle</h3>
+
+  <div class="rpm-buttons1">
+    <button onclick="selectRPM1(8)">8 RPM</button>
+    <button onclick="selectRPM1(10)">10 RPM</button>
+    <button onclick="selectRPM1(15)">15 RPM</button>
+  </div>
+</div> 
+
+<div id = rpm_container_2 class="rpm-container">
+  <h3>Choose RPM to Run Spindle</h3>
+
+  <div class="rpm-buttons2">
+    <button onclick="selectRPM2(8)">8 RPM</button>
+    <button onclick="selectRPM2(10)">10 RPM</button>
+    <button onclick="selectRPM2(15)">15 RPM</button>
+  </div>
+</div> 
+
               <div id="stp12">    
               <img id="weighing_machine" src="wheighing-machine.png" alt="Water Bath" />   
              
@@ -109,14 +208,13 @@
 
     <div id="setTempDisplay3">25°C</div>
 
-    <div id="actualTempDisplay13">Bath Temp</div>
-    <div id="sampleTempDisplay13">Set Temp</div>
+    <div id="actualTempDisplay13">SV</div>
+    <div id="sampleTempDisplay13">PV</div>
 
     
   
     </div>
-                     <img id="latex_beaker_200" src="latex_beaker_200.png" alt="Water Bath" />   
-
+                    
 
 
 
@@ -288,13 +386,24 @@
   <div id="viscoGroup">
   <img id="selectSpindle" class="visco-img" src="select spindle.png" alt="Select Spindle">
   <img id="spindleNo22" class="visco-img" src="spindle_no_2.png" alt="Spindle No. 2">
- 
+  <img id="spindleNo1" class="visco-img" src="spindle_no_1.png" alt="Spindle No. 2">
+  <div id = "spindle_1_text" >S1</div>
+  <div id = "spindle_2_text" >S2</div>
+  <div id = "spindle_3_text" >S3</div>
   <img id="viscosityUpButton" class="visco-img" src="viscocity_up_button.png" alt="Viscosity Up Button">
   <img id="motorOnOff" class="visco-img" src="motor_on_off.png" alt="Motor On Off">
   <img id="setSplinder" class="visco-img" src="set_splinder.png" alt="Set Splinder">
-  <img id="spindleNo3" class="visco-img" src="spindle_no_3.png" alt="Spindle No. 3">
+  <img id="spindleNo3" class="visco-img" src="spindle_no_2.png" alt="Spindle No. 3">
   <img id="viscosityDownButton" class="visco-img" src="viscocity_down_button.png" alt="Viscosity Down Button">
   <img id="viscometerUpperPart" class="visco-img" src="viscometer_upper.png" alt="Viscometer Upper Part">
+
+   <img id="latex_beaker_200" src="latex_beaker_200.png" alt="Water Bath" />   
+                       <img id="latex_beaker_200_S3" src="latex_beaker_200.png" alt="Water Bath" />   
+                       <img id="latex_beaker_200_S1" src="latex_beaker_200.png" alt="Water Bath" /> 
+       <div id = "sample_A_text" >Sample A</div>
+  <div id = "sample_B_text" >Sample B</div>
+  <div id = "sample_C_text" >Sample C</div>
+
 </div>
 
       <img id="viscometerStand" class="visco-img" src="viscometer_stand.png" alt="Viscosity Down Button">
@@ -308,13 +417,15 @@
   <div id="actualTempDisplay4"> S62</div>
     <div id="sampleTempDisplay4">cp 0</div>
     <div id="actualTempDisplay5">1.3%</div>
-    <div id="sampleTempDisplay5">6.0RPM</div>
+    <div id="sampleTempDisplay5">0.0RPM</div>
   </div>
   <!-- Audio element with unique ID and source file -->
   <audio id="motorSound" >
     <source src="motor_sound.mp3" type="audio/mpeg">
     Your browser does not support audio.
   </audio>
+  <audio id = "motorSound_2" src = "motor_sound_2.mp3" type  = "audio/mpeg">
+      <audio id = "motorSound_3" src = "motor_sound_3.mp3" type  = "audio/mpeg"></audio>
 
   
  
